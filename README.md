@@ -10,3 +10,13 @@ https://data.world/shruti-prabhu/shark-attacks
 
 
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/heatmap.PNG?raw=true)
+
+
+![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/bar.PNG?raw=true)
+
+
+![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/pie.PNG?raw=true)
+
+
+
+![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/database.PNG?raw=true)
