@@ -8,15 +8,14 @@ https://public.opendatasoft.com/explore/dataset/us-county-boundaries/table/?disj
 
 https://data.world/shruti-prabhu/shark-attacks
 
-
+Heatmap by County
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/heatmap.PNG?raw=true)
 
-
+Bar chart by Coast
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/bar.PNG?raw=true)
 
-
+Pie Chart for Fatal vs. Nonfatal
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/pie.PNG?raw=true)
 
-
-
+After cleaning our data, we put our data into a MongoDB database
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/database.PNG?raw=true)
