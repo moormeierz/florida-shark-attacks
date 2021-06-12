@@ -6,12 +6,12 @@ from flask import Flask, jsonify, render_template
 app = Flask(__name__)
 
 
-# @app.route("/home")
-# def home():
-#     return render_template("index.html")
-
-
 @app.route("/home")
+def home():
+    return render_template("index.html")
+
+
+@app.route("/heat")
 def heat():
     return render_template('heat.html')
 
