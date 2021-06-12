@@ -78,6 +78,8 @@ d3.json('static/data.geojson').then(function (data, err) {
     // Set color scale
     scale: ['#00FF00', '#33ff00', '#66ff00', '#ccff00', '#FFFF00', '#FFCC00', '#ff9900', '#ff6600', '#FF3300', '#FF0000', '#660000'],
 
+
+
     // Number of breaks in step range
     steps: 12,
 
@@ -126,6 +128,7 @@ d3.json('static/data.geojson').then(function (data, err) {
 
     div.innerHTML += "<ul>" + labels.join("") + "</ul>";
     return div;
+
   };
 
 
