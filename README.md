@@ -18,5 +18,5 @@ We created a flask application that includes 3 interactive visualizations.  Thes
 
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/pie.PNG?raw=true)
 
-After cleaning our data, we put our data into a MongoDB database
+After cleaning our data, we put our data into a MongoDB database.
 ![alt text](https://github.com/moormeierz/florida-shark-attacks/blob/main/images/database.PNG?raw=true)
