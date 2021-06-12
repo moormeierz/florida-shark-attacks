@@ -4,51 +4,6 @@ d3.json('static/data.geojson').then(function (data, err) {
   console.log(data);
 
 
-
-  //  0, 1-10, 11-20, 21-30, 31-40, 41-50, 51-60, 61-70, 71-80, 81-90, 91-100, 101+ 
-
-  // // Create a function for heatcolor
-  // function heatcolor(attacks) {
-
-  //   if (attacks == 0) {
-  //     return '#00FF00';
-  //   }
-  //   if (attacks <= 10) {
-  //     return '#33ff00';
-  //   }
-  //   if (attacks <= 20) {
-  //     return '#66ff00';
-  //   }
-  //   if (attacks <= 30) {
-  //     return '#99ff00';
-  //   }
-  //   if (attacks <= 40) {
-  //     return '#ccff00';
-  //   }
-  //   if (attacks <= 50) {
-  //     return '#FFFF00';
-  //   }
-  //   if (attacks <= 60) {
-  //     return '#FFCC00';
-  //   }
-  //   if (attacks <= 70) {
-  //     return '#ff9900';
-  //   }
-  //   if (attacks <= 80) {
-  //     return '#ff6600';
-  //   }
-  //   if (attacks <= 90) {
-  //     return '#FF3300';
-  //   }
-  //   if (attacks <= 100) {
-  //     return '#FF0000';
-  //   }
-  //   else {
-  //     return '#660000';
-  //   }
-  // }
-
-
   // Heat Map
 
   var myMap = L.map("map", {
@@ -96,9 +51,7 @@ d3.json('static/data.geojson').then(function (data, err) {
     onEachFeature: function (feature, layer) {
       layer.bindPopup(feature.properties.namelsad +
         "<hr>Attacks :" + feature.properties.attacks
-        // '<hr>Fatal :' + feature.properties.fatal +
-        // '<br>Nonfatal :' + feature.properties.nonfatal +
-        // '<br>Unknown :' + feature.properties.unknown
+
       );
     }
   }).addTo(myMap);
@@ -131,30 +84,6 @@ d3.json('static/data.geojson').then(function (data, err) {
 
   };
 
-
-  //___________________________________________________________________________
-
-
-  // // Create a legend (another way)
-  // colors_for_legend = ['#00FF00', '#33ff00', '#66ff00', '#99ff00', '#ccff00', '#FFFF00', '#FFCC00', '#ff9900', '#ff6600', '#FF3300', '#FF0000']
-
-  // var legend = L.control({ position: 'bottomright' });
-
-  // legend.onAdd = function (myMap) {
-
-  //   var div = L.DomUtil.create('div', 'info legend'),
-  //     depth = [0, 1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
-  //     colors = colors_for_legend;
-
-
-  //   // Loop through
-  //   for (var i = 0; i < depth.length; i++) {
-  //     div.innerHTML +=
-  //       '<i style="background:' + colors[i] + '"></i> ' +
-  //       depth[i] + (depth[i + 1] ? '&ndash;' + depth[i + 1] + '<br>' : '+');
-  //   }
-  //   return div;
-  // };
 
 
   // Adding legend to the map
